@@ -1,0 +1,12 @@
+.button {
+  background: none;
+  border: 1px solid green;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+
+  &:hover {
+    background-color: darkgreen;
+    color: white;
+  }
+}
