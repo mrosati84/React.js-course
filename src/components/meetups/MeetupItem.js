@@ -5,6 +5,9 @@ function MeetupItem(props) {
       <div>
         <img src={props.meetup.image} alt="" />
       </div>
+      <div>
+        <button>Add to favorites</button>
+      </div>
     </li>
   );
 }
