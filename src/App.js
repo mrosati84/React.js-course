@@ -1,16 +1,14 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch } from "react-router-dom";
 
-import AllMeetups from './pages/AllMeetups.js';
-import Favorites from './pages/Favorites.js';
-import NewMeetup from './pages/NewMeetup.js';
+import AllMeetups from "./pages/AllMeetups.js";
+import Favorites from "./pages/Favorites.js";
+import NewMeetup from "./pages/NewMeetup.js";
 
-import MainNavigation from './components/layout/MainNavigation.js';
+import Layout from "./components/ui/Layout.js";
 
 function App() {
   return (
-    <div>
-      <MainNavigation />
-
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <AllMeetups />
@@ -22,7 +20,7 @@ function App() {
           <Favorites />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
