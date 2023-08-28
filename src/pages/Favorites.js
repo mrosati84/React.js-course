@@ -9,6 +9,9 @@ function FavoritesPage() {
     <section>
       <h1>My Favorites</h1>
       <MeetupList meetups={favoritesCtx.favorites} />
+      {favoritesCtx.totalFavorites === 0
+        ? "No favorites yet. Start adding some?"
+        : ""}
     </section>
   );
 }
